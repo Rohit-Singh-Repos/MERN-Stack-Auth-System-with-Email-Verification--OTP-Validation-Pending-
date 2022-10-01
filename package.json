@@ -1,0 +1,21 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && SET \"NODE_ENV=development\" && npm start\" ",
+    "start:prod": "concurrently \"cd backend && npm start\" \"cd frontend && SET \"NODE_ENV=production\" && npm run build\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "find-config": "^1.0.0"
+  },
+  "dependencies": {
+    "nodemailer": "^6.8.0",
+    "react-router-dom": "^6.4.1"
+  }
+}
